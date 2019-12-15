@@ -11,10 +11,14 @@
         transition: background-color .2s;
         border-top-left-radius: 13px;
         border-top-right-radius: 13px;
-        cursor: pointer;
         z-index: 2;
+        user-select: none;
 
-        &:not(.tabs__item_active):hover {
+        &:not(.tabs__item_filler) {
+            cursor: pointer;
+        }
+
+        &:not(.tabs__item_active):not(.tabs__item_filler):hover {
             background-color: #ddd;
         }
 

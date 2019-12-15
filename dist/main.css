@@ -48,9 +48,11 @@ body {
     transition: background-color .2s;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
-    cursor: pointer;
-    z-index: 2; }
-    .tabs__item:not(.tabs__item_active):hover {
+    z-index: 2;
+    user-select: none; }
+    .tabs__item:not(.tabs__item_filler) {
+      cursor: pointer; }
+    .tabs__item:not(.tabs__item_active):not(.tabs__item_filler):hover {
       background-color: #ddd; }
     .tabs__item_active {
       background-color: #fff; }
