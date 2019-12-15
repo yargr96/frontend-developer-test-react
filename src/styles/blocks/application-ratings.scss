@@ -8,7 +8,20 @@
         text-align: center;
 
         &:nth-child(2) {
-            flex-grow: 1;
+            width: 189px;
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
         }
+    }
+
+    &__title {
+        color: #979898;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__value {
+        font-size: 26px;
+        font-weight: 900;
     }
 }

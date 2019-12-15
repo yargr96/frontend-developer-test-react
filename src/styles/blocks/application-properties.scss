@@ -3,4 +3,42 @@
     align-items: center;
     justify-content: space-between;
     width: 274px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &_platform {
+            color: #979898;
+            
+            .application-properties__value {
+                width: 36px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #979898;
+                border-radius: 6px;
+            }
+
+            .application-properties__icon {
+                width: 12px;
+            }
+        }
+
+        &_location {
+            .application-properties__icon {
+                width: 9px;
+            }
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 10px;
+    }
 }
