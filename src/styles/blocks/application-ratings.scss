@@ -1,0 +1,14 @@
+.application-ratings {
+    display: flex;
+    width: 370px;
+    margin: auto;
+
+    &__item {
+        min-width: 91px;
+        text-align: center;
+
+        &:nth-child(2) {
+            flex-grow: 1;
+        }
+    }
+}

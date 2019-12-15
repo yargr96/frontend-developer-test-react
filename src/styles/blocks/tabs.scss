@@ -1,0 +1,48 @@
+.tabs {
+    display: flex;
+    position: relative;
+
+    &__item {
+        height: 32px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        background-color: #E8E8E8;
+        transition: background-color .2s;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        cursor: pointer;
+        z-index: 2;
+
+        &:not(.tabs__item_active):hover {
+            background-color: #ddd;
+        }
+
+        &_active {
+            background-color: #fff;
+
+            &+.tabs__item {
+                border-bottom-left-radius: 13px;
+            }
+        }
+
+        &_pre-active {
+            border-bottom-right-radius: 13px;
+        }
+
+        &_filler {
+            flex-grow: 1;
+            background-color: #f1f1f5;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        height: 16px;
+    }
+}

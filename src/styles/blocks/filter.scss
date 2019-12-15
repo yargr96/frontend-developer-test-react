@@ -1,0 +1,42 @@
+.filter {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__header {
+        line-height: 18px;
+        margin-bottom: 18px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 202px;
+        height: 34px;
+    }
+
+    &__divider {
+        width: 1px;
+        height: 18px;
+        background-color: #e8e8e8;
+    }
+
+    &__item {
+        width: 54px;
+        height: 100%;
+        background-color: #f1f1f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 13px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &_active {
+            color: #ffffff;
+            background-color: #3469f2;
+        }
+    }
+}
